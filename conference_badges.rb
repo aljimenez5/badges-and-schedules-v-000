@@ -13,6 +13,6 @@ def assign_rooms(speakers_list)
 end
 
 def printer(attendees)
-  batch_badge_creator.each {|individual_badge| puts "#{individual_badge}"}
+  batch_badge_creator(attendees).each {|individual_badge| puts "#{individual_badge}"}
   assign_rooms.each {|individual_rooms| puts "#{individual_rooms}"}
 end
